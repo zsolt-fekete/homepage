@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tc-wrapper{
+  margin: auto 0;
+  text-align: center;
+}
+
+.hero-link{
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-mobile-cointainer {
+    background: linear-gradient(rgba(3,69,112, 0.7),rgba(3,69,112, 0.7)), url(assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+  }
+
+  .hero-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 120px;
+    color: white;
+    margin: 0;
+    position: relative;
+  }
+
+  .hero-mobile-divider{
+    border: 1px solid #FFFFFF;
+    width: 43px;
+  }
+
+  .hero-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+    margin: 0;
+  }
+
+  .hero-buttons-wrapper{
+    margin-top: 16px;
+  }
+
+  .hero-buttons {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 11px;
+    margin: 16px;
+  }
+
+  .hero-primary-button{
+    background-color: #FA7268;
+    display: block;
+  }
+
+  .hero-secondary-button{
+    background-color: #1A5F8C;
+    display: block;
+  }
+
+  .trusted-partners-title{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 48px;
+    align-items: center;
+    text-align: center;
+    color: #FA7268;
+  }
+
+  .trusted-partners-logos {
+    margin: 0 16px;
+  }
+
+  .trusted-partner-row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .trusted-partner-row.second{
+    margin: 16px 16.67%;
+  }
+
+  .hivent{background: url(assets/c_hiventures.png);}
+
+  .signa{background: url(assets/c_signa.png);}
+
+  .computrend{background: url(assets/c_computrend.png);}
+
+  .evrotrust{background: url(assets/c_evrotrust.png);}
+
+  .ordit{background: url(assets/c_ordit.png);}
+
+  .trusted-partner-logo {
+      height: 34px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+  }
+
+  .hero-hide-mobile{
+    display: none;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .tc-hero {
+      display: flex;
+      flex-direction: row;
+      height: 560px;
+  }
+  .hero-image {
+      background: url(assets/hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      border-radius: 0 0 0 200px;
+  }
+
+  .hero-content {
+      padding: 160px 10% 0;
+      min-width: 400px;
+      width: 25%;
+      text-align: left;
+      color: #1A5F8C;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .hero-title {
+    font-size: 45px;
+    line-height: 53px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .hero-mobile-divider{
+    display: none;
+  }
+
+  .hero-subtitle {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+  }
+
+  .hero-buttons-wrapper{
+    margin-top: 32px;
+  }
+
+  .hero-buttons {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+  }
+
+  .hero-primary-button{
+    background-color: #FA7268;
+    margin-right: 15px;
+  }
+
+  .hero-primary-button:hover{
+    background-color: #f84437;
+  }
+
+  .hero-secondary-button{
+    background-color: #1A5F8C;
+  }
+
+  .hero-secondary-button:hover{
+    background-color: #124261;
+  }
+
+  .trusted-partners{
+    padding: 0 10% 0;
+    margin: 0 0 32px;
+  }
+
+  .trusted-partners-title:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    width   : 33px;
+    border-bottom: 4px solid  #FA7268;
+  }
+
+  .trusted-partners-title{
+    color: #FA7268;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0 0 32px 0;
+    padding: 0;
+    position: relative;
+    z-index : 1;
+  }
+
+  .trusted-partners-logos {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .trusted-partner-logo:hover { transform: scale(1.1); }
+
+  .hivent{background: url(assets/g_hiventures.png);}
+  .hivent:hover { background: url(assets/c_hiventures.png);}
+
+  .signa{background: url(assets/g_signa.png);}
+  .signa:hover { background: url(assets/c_signa.png);}
+
+  .computrend{background: url(assets/g_computrend.png);}
+  .computrend:hover { background: url(assets/c_computrend.png);}
+
+  .evrotrust{background: url(assets/g_evrotrust.png);}
+  .evrotrust:hover { background: url(assets/c_evrotrust.png);}
+
+  .ordit{background: url(assets/g_ordit.png);}
+  .ordit:hover { background: url(assets/c_ordit.png);}
+
+  .trusted-partner-logo {
+      height: 50px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      transition: all .2s ease-in-out;
+  }
+
+  .trusted-partner-logo:hover {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  .hero-hide-desktop{
+    display:none;
+  }
